@@ -1,0 +1,32 @@
+/*!
+ * Theme Name: Default
+ * Package : DashLite
+ * Author: Softnio
+ * Author URI: http://themeforest.net/user/softnio
+ * Version	 :	1.0.0
+ * Updated	 :	02.18.2020
+**/
+
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;1,300&display=swap');
+* {
+    font-family: 'Sarabun', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Sarabun', sans-serif;
+}
+
+.nk-news-text p {
+    font-size: 14px;
+    margin-bottom: 0;
+    color: #526484;
+    font-weight: 500;
+    text-overflow: initial !important;
+    white-space: nowrap;
+    width: calc(100%);
+}

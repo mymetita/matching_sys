@@ -1,0 +1,1802 @@
+<!DOCTYPE html>
+<html lang="zxx" class="js">
+
+<head>
+    <base href="">
+    <meta charset="utf-8">
+    <meta name="author" content="Softnio">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="@@page-discription">
+    <!-- Fav Icon  -->
+    <link rel="shortcut icon" href="images/new-logo-icon.png">
+    <!-- Page Title  -->
+    <title>Matching System | Overview</title>
+    <!-- StyleSheets  -->
+    <link rel="stylesheet" href="assets/css/dashlite.css?ver=1.4.0">
+    <link id="skin-default" rel="stylesheet" href="assets/css/theme.css?ver=1.4.0">
+</head>
+
+<body class="nk-body bg-lighter npc-general has-sidebar ">
+    <div class="nk-app-root">
+        <!-- main -->
+        <div class="nk-main ">
+            <!-- sidebar -->
+            <div class="nk-sidebar nk-sidebar-fixed is-light" data-content="sidebarMenu">
+                <div class="nk-sidebar-element nk-sidebar-head">
+                    <div class="nk-sidebar-brand">
+                        <a href="html/general/index.html" class="logo-link nk-sidebar-logo">
+                            <img class="logo-light logo-img" src="images/new-logo.png" srcset="images/new-logo.png 2x" alt="logo">
+                            <img class="logo-dark logo-img" src="images/new-logo.png" srcset="images/new-logo.png 2x" alt="logo-dark">
+                            <!--<span class="nio-version">Dashboard</span>-->
+                        </a>
+                    </div>
+                    <div class="nk-menu-trigger mr-n2">
+                        <a href="#" class="nk-nav-toggle nk-quick-nav-icon d-xl-none" data-target="sidebarMenu"><em class="icon ni ni-arrow-left"></em></a>
+                    </div>
+                </div>
+                <!-- sidebar-element -->
+                <div class="nk-sidebar-element">
+                    <div class="nk-sidebar-content">
+                        <div class="nk-sidebar-menu" data-simplebar>
+                            <ul class="nk-menu">
+
+                                <!-- menu-heading -->
+                                <li class="nk-menu-heading">
+                                    <h6 class="overline-title text-primary-alt"> Independent variable </h6>
+                                </li>
+                                <!-- จำนวนกะทำงาน -->
+                                <li class="form-group row mb-2" style="padding: 0.25rem 24px 0.5rem;">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-label" for="worktime">จำนวนกะทำงาน</label>
+                                            <!--<span class="form-note"></span>-->
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 pl-0">
+                                        <div class="form-group">
+                                            <div class="form-control-wrap">
+                                                <input type="text" class="form-control" id="worktime" value="" style="text-align:right;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- ค่าเผื่อใช้เวชภัณฑ์ - 20.00% -->
+                                <li class="form-group row mb-2" style="padding: 0.25rem 24px 0.5rem;">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-label" for="medical-tools">ค่าเผื่อใช้เวชภัณฑ์</label>
+                                            <!--<span class="form-note"></span>-->
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 pl-0">
+                                        <div class="form-group">
+                                            <div class="form-control-wrap">
+                                                <input type="text" class="form-control" id="medical-tools" value="" style="text-align:right;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- จำนวนวันชุด ppe คงคลัง (มากสุด) -->
+                                <li class="form-group row mb-2" style="padding: 0.25rem 24px 0.5rem;">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-label" for="ppe-no">จำนวนวันชุด ppe คงคลัง </label>
+                                            <span class="form-note">(มากสุด)</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 pl-0">
+                                        <div class="form-group">
+                                            <div class="form-control-wrap">
+                                                <input type="text" class="form-control" id="ppe-no" value="" style="text-align:right;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- เวลาการจัดส่ง surgical masks (มากสุด) -->
+                                <li class="form-group row mb-2" style="padding: 0.25rem 24px 0.5rem;">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-label" for="mask-time-high">เวลาการจัดส่ง surgical masks </label>
+                                            <span class="form-note">(มากสุด)</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 pl-0">
+                                        <div class="form-group">
+                                            <div class="form-control-wrap">
+                                                <input type="text" class="form-control" id="mask-time-high" value="" style="text-align:right;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- เวลาการจัดส่ง surgical masks (น้อยสุด) -->
+                                <li class="form-group row mb-0" style="padding: 0.25rem 24px 0.5rem;">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-label" for="mask-time-low">เวลาการจัดส่ง surgical masks </label>
+                                            <span class="form-note">(น้อยสุด)</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 pl-0">
+                                        <div class="form-group">
+                                            <div class="form-control-wrap">
+                                                <input type="text" class="form-control" id="mask-time-low" value="" style="text-align:right;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- แก้ไขข้อมูล -->
+                                <li class="nk-menu-item d-flex justify-content-end">
+                                    <a href="#" class="nk-menu-link text-blue" style="padding: 0.625rem 24px 0.625rem 24px;">
+                                        <span>แก้ไขข้อมูล<em class="icon ni ni-edit"></em></span>
+                                    </a>
+                                </li>
+
+                                <!-- menu-head -->
+                                <li class="nk-menu-heading">
+                                    <h6 class="overline-title text-primary-alt"> All Patients </h6>
+                                </li>
+                                <div class="row" style="padding: 0.25rem 24px 0.5rem;">
+                                    <li class="col-12">
+                                        <div class="card card-bordered">
+                                            <div class="card-inner text-center">
+                                                <h6 class="card-subtitle mb-2">#PUI</h6>
+                                                <h5 class="card-title">3,255</h5>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </div>
+
+                                <div class="row" style="padding: 0.25rem 24px 0.5rem;">
+                                    <li class="col-4 pr-1">
+                                        <div class="card card-bordered">
+                                            <div class="m-2 my-3 text-center">
+                                                <p class="card-subtitle mb-2">#Mild</p>
+                                                <h5 class="card-title">652</h5>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="col-4 px-0">
+                                        <div class="card card-bordered">
+                                            <div class="m-1 my-3 text-center">
+                                                <p class="card-subtitle mb-2">#Moderate</p>
+                                                <h5 class="card-title">257</h5>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="col-4 pl-1">
+                                        <div class="card card-bordered">
+                                            <div class="m-1 my-3 text-center">
+                                                <p class="card-subtitle mb-2">#Severe</p>
+                                                <h5 class="card-title">-</h5>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </div>
+                            </ul>
+                            <!-- .nk-menu -->
+                        </div>
+                        <!-- .nk-sidebar-menu -->
+                    </div>
+                    <!-- .nk-sidebar-content -->
+                </div>
+                <!-- .nk-sidebar-element -->
+            </div>
+            <!--/ sidebar -->
+
+
+            <!-- wrap -->
+            <div class="nk-wrap ">
+                <!-- main header -->
+                <div class="nk-header nk-header-fixed is-light d-flex align-items-center" style="height:65px">
+                    <div class="container-fluid">
+                        <div class="nk-header-wrap">
+                            <div class="nk-menu-trigger d-xl-none ml-n1">
+                                <a href="#" class="nk-nav-toggle nk-quick-nav-icon" data-target="sidebarMenu"><em class="icon ni ni-menu"></em></a>
+                            </div>
+                            <div class="nk-header-brand d-xl-none">
+                                <a href="#" class="logo-link">
+                                    <img class="logo-light logo-img" src="images/new-logo.png" srcset="images/new-logo.png 2x" alt="logo">
+                                    <img class="logo-dark logo-img" src="images/new-logo.png" srcset="images/new-logo.png 2x" alt="logo-dark">
+                                    <!--<span class="nio-version">Dashboard</span>-->
+                                </a>
+                            </div>
+                            <!-- header-brand -->
+                            <div class="nk-header-news d-none d-xl-block text-indigo">
+                                <div class="nk-news-list">
+                                    <a class="nk-news-item" href="#">
+                                        <div class="nk-news-icon">
+                                            <em class="icon ni ni-card-view text-blue"></em>
+                                        </div>
+                                        <div class="nk-news-text">
+                                            <p>OA-003 - Overview </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- header-news -->
+                            <div class="nk-header-tools">
+                                <ul class="nk-quick-nav">
+
+                                </ul>
+                            </div>
+
+                            <!-- .nk-header-tools -->
+                        </div>
+                        <!-- .nk-header-wrap -->
+                    </div>
+                    <!-- .container-fliud -->
+                </div>
+                <!-- / main header -->
+
+
+                <!-- content -->
+                <div class="nk-content ">
+                    <div class="container-fluid">
+                        <div class="nk-content-inner">
+                            <div class="nk-content-body">
+
+                                <div class="nk-block">
+                                    <div class="row g-gs">
+                                        <div class="col-12">
+                                            <div class="card card-bordered card-preview container-fluid">
+                                                <div class="card-inner row">
+                                                    <div class="col-2">
+                                                        <h6>แสดงข้อมูลจาก</h6>
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <div class="row">
+                                                            <div class="col-3 pl-0">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="default-06"><small>เขต Health Area</small></label>
+                                                                    <div class="form-control-wrap ">
+                                                                        <div class="form-control-select">
+                                                                            <select class="form-control" id="default-06">
+                                                                    <option value="default_option">Default Option</option>
+                                                                    <option value="option_select_name">Option select name</option>
+                                                                    <option value="option_select_name">Option select name</option>
+                                                                </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 pl-0">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="default-06"><small>จังหวัด Province</small></label>
+                                                                    <div class="form-control-wrap ">
+                                                                        <div class="form-control-select">
+                                                                            <select class="form-control" id="default-06">
+                                                                    <option value="default_option">Default Option</option>
+                                                                    <option value="option_select_name">Option select name</option>
+                                                                    <option value="option_select_name">Option select name</option>
+                                                                </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 pl-0">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="default-06"><small>โรงพยาบาล Hospital</small></label>
+                                                                    <div class="form-control-wrap ">
+                                                                        <div class="form-control-select">
+                                                                            <select class="form-control" id="default-06">
+                                                                    <option value="default_option">Default Option</option>
+                                                                    <option value="option_select_name">Option select name</option>
+                                                                    <option value="option_select_name">Option select name</option>
+                                                                </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 pl-0">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="default-06"><small>กลุ่มเวชภัณฑ์ Product Type</small></label>
+                                                                    <div class="form-control-wrap ">
+                                                                        <div class="form-control-select">
+                                                                            <select class="form-control" id="default-06">
+                                                                    <option value="default_option">Default Option</option>
+                                                                    <option value="option_select_name">Option select name</option>
+                                                                    <option value="option_select_name">Option select name</option>
+                                                                </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-1 d-flex align-items-center justify-content-center">
+                                                        <a href="#" class="btn btn-icon btn btn-outline-primary"><em class="icon ni ni-search"></em></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row g-gs">
+                                        <div class="col-12">
+                                            <div class="card card-bordered card-preview container-fluid d-flex justify-content-center">
+                                                <div class="row">
+
+                                                    <div class="col-10 pr-0">
+                                                        <div class="card-inner px-2">
+                                                            <div class="card card-bordered card-preview table-responsive">
+                                                                <table class="table is-compact">
+                                                                    <thead>
+                                                                        <tr class="tb-tnx-head">
+                                                                            <th class="">
+                                                                                <span class="">#</span>
+                                                                            </th>
+                                                                            <th scope="col" class="">
+                                                                                <span class="w-40">
+                                                                                ชื่อกลุ่มสินค้า <br> Type Name
+                                                                                </span>
+                                                                            </th>
+                                                                            <th scope="col" class="text-center">
+                                                                                <small class="">
+                                                                                จำนวนวันเวชภัณฑ์คงคลังเฉลี่ย <br> (โรงพยาบาล)
+                                                                                </small>
+                                                                            </th>
+                                                                            <th scope="col" class="text-center">
+                                                                                <small class="">
+                                                                                ปริมาณเวชภัณฑ์คงคลัง <br> (โรงพยาบาล)
+                                                                                </small>
+                                                                            </th>
+                                                                            <th scope="col" class="text-center">
+                                                                                <small class="">
+                                                                                ปริมาณการจัดส่งเวชภัณฑ์<br> (แนะนำ)
+                                                                                </small>
+                                                                            </th>
+                                                                            <th scope="col" class="text-center">
+                                                                                <small class="">
+                                                                                ปริมาณการจัดส่งเวชภัณฑ์<br> (ปรับแก้)
+                                                                                </small>
+                                                                            </th>
+                                                                            <th scope="col" class="text-center">
+                                                                                <small class="">
+                                                                                จำนวนวันเวชภัณฑ์คงคลัง<br> (โรงพยาบาล) หลังการจัดส่ง
+                                                                                </small>
+                                                                            </th>
+                                                                            <th scope="col" class="text-center">
+                                                                                <small class="">
+                                                                                ปริมาณเวชภัณฑ์คงคลัง <br> (โรงพยาบาล) หลังการจัดส่ง
+                                                                                </small>
+                                                                            </th>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="tb-tnx-id">
+                                                                                <a href="#" class="text-blue"><span>1</span></a>
+                                                                            </td>
+                                                                            <td class="">
+                                                                                <span class="">12 - Shoe cover</span>
+                                                                            </td>
+                                                                            <td class="text-center bg-azure-dim">
+                                                                                <span class="">1</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">53,131</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">30</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">60,000</span>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="tb-tnx-id">
+                                                                                <a href="#" class="text-blue"><span>2</span></a>
+                                                                            </td>
+                                                                            <td class="">
+                                                                                <span class="">05 - Shoe cover</span>
+                                                                            </td>
+                                                                            <td class="text-center bg-azure-dim">
+                                                                                <span class="">4</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">53,131</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">30</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">60,000</span>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="tb-tnx-id">
+                                                                                <a href="#" class="text-blue"><span>3</span></a>
+                                                                            </td>
+                                                                            <td class="">
+                                                                                <span class="">33 - Shoe cover</span>
+                                                                            </td>
+                                                                            <td class="text-center bg-azure-dim">
+                                                                                <span class="">4</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">53,131</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">30</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">60,000</span>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="tb-tnx-id">
+                                                                                <a href="#" class="text-blue"><span>4</span></a>
+                                                                            </td>
+                                                                            <td class="">
+                                                                                <span class="">13 - Shoe cover</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">4</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">53,131</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">30</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">60,000</span>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="tb-tnx-id">
+                                                                                <a href="#" class="text-blue"><span>5</span></a>
+                                                                            </td>
+                                                                            <td class="">
+                                                                                <span class="">01 - Shoe cover</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">60</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">53,131</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">30</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">60,000</span>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--- Progress Table --->
+                                                    <div class="col-2 pl-0">
+                                                        <div class="card-inner px-2">
+                                                            <div class="card card-bordered card-preview">
+                                                                <table class="table table-tranx is-compact">
+                                                                    <thead>
+                                                                        <tr class="tb-tnx-head">
+                                                                            <th class="text-center"><span class=""><br>กราฟแสดงปริมาณเวลา</span></th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="px-1" style="padding: 10px 5px;">
+                                                                                <div class="progress progress-lg">
+                                                                                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" data-progress="70">70%</div>
+                                                                                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" data-progress="30">30%</div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="px-1" style="padding: 10px 5px;">
+                                                                                <div class="progress progress-lg">
+                                                                                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" data-progress="70">70%</div>
+                                                                                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" data-progress="30">30%</div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="px-1" style="padding: 10px 5px;">
+                                                                                <div class="progress progress-lg">
+                                                                                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" data-progress="50">50%</div>
+                                                                                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" data-progress="50">50%</div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="px-1" style="padding: 10px 5px;">
+                                                                                <div class="progress progress-lg">
+                                                                                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" data-progress="40">40%</div>
+                                                                                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" data-progress="60">60%</div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="px-1" style="padding: 10px 5px;">
+                                                                                <div class="progress progress-lg">
+                                                                                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" data-progress="70">70%</div>
+                                                                                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" data-progress="30">30%</div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="nk-block-head nk-block-head-sm">
+                                    <div class="nk-block-between">
+                                        <div class="nk-block-head-content">
+                                            <h5>
+                                                ตารางแสดงข้อมูลตามกลุ่มเวชภัณฑ์
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="nk-block">
+                                    <!--- Searching --->
+                                    <div class="row g-gs">
+                                        <div class="col-12">
+                                            <div class="card card-bordered card-preview container-fluid">
+                                                <div class="card-inner row">
+                                                    <div class="col-2">
+                                                        <h6>แสดงข้อมูลจาก</h6>
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <div class="row">
+                                                            <div class="col-3 pl-0">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="default-06"><small>เขต Health Area</small></label>
+                                                                    <div class="form-control-wrap ">
+                                                                        <div class="form-control-select">
+                                                                            <select class="form-control" id="default-06">
+                                                                    <option value="default_option">Default Option</option>
+                                                                    <option value="option_select_name">Option select name</option>
+                                                                    <option value="option_select_name">Option select name</option>
+                                                                </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 pl-0">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="default-06"><small>จังหวัด Province</small></label>
+                                                                    <div class="form-control-wrap ">
+                                                                        <div class="form-control-select">
+                                                                            <select class="form-control" id="default-06">
+                                                                    <option value="default_option">Default Option</option>
+                                                                    <option value="option_select_name">Option select name</option>
+                                                                    <option value="option_select_name">Option select name</option>
+                                                                </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 pl-0">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="default-06"><small>โรงพยาบาล Hospital</small></label>
+                                                                    <div class="form-control-wrap ">
+                                                                        <div class="form-control-select">
+                                                                            <select class="form-control" id="default-06">
+                                                                    <option value="default_option">Default Option</option>
+                                                                    <option value="option_select_name">Option select name</option>
+                                                                    <option value="option_select_name">Option select name</option>
+                                                                </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 pl-0">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="default-06"><small>กลุ่มเวชภัณฑ์ Product Type</small></label>
+                                                                    <div class="form-control-wrap ">
+                                                                        <div class="form-control-select">
+                                                                            <select class="form-control" id="default-06">
+                                                                    <option value="default_option">Default Option</option>
+                                                                    <option value="option_select_name">Option select name</option>
+                                                                    <option value="option_select_name">Option select name</option>
+                                                                </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-1 d-flex align-items-center justify-content-center">
+                                                        <a href="#" class="btn btn-icon btn btn-outline-primary"><em class="icon ni ni-search"></em></a>
+                                                    </div>
+                                                </div>
+
+                                                <!--- Bar - Progess bar --->
+                                                <div class="card-inner row py-0 d-flex align-items-center">
+                                                    <div class="col-1 bg-blue-dim">
+                                                        <span> 
+                                                            #PUI
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-11">
+                                                        <div class="progress progress-lg">
+                                                            <div class="progress-bar bg-warning-dim text-gray text-right" data-progress="45">157</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-inner row pt-1 pb-0 d-flex align-items-center">
+                                                    <div class="col-1 bg-blue-dim">
+                                                        <span> 
+                                                            #Mild
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-11">
+                                                        <div class="progress progress-lg">
+                                                            <div class="progress-bar bg-warning text-right" data-progress="30">150</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-inner row py-1 d-flex align-items-center">
+                                                    <div class="col-1 bg-blue-dim">
+                                                        <span> 
+                                                            #Moderate
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-11">
+                                                        <div class="progress progress-lg">
+                                                            <div class="progress-bar bg-orange text-right" data-progress="10">120</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-inner row pt-0 pb-4 d-flex align-items-center">
+                                                    <div class="col-1 bg-blue-dim">
+                                                        <span> 
+                                                            #Severe
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-11">
+                                                        <div class="progress progress-lg">
+                                                            <div class="progress-bar bg-danger text-right" data-progress="1">0</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--- Normal Table - Progress Table --->
+                                    <div class="row g-gs">
+                                        <div class="col-12">
+                                            <div class="card card-bordered card-preview container-fluid d-flex justify-content-center">
+                                                <div class="row">
+                                                    <!--- Normal Table --->
+                                                    <div class="col-10 pr-0">
+                                                        <div class="card-inner px-2">
+                                                            <div class="card card-bordered card-preview table-responsive">
+                                                                <table class="table is-compact">
+                                                                    <thead>
+                                                                        <tr class="tb-tnx-head">
+                                                                            <th class="">
+                                                                                <span class="">#</span>
+                                                                            </th>
+                                                                            <th scope="col" class="">
+                                                                                <span class="w-40">
+                                                                                ชื่อกลุ่มสินค้า <br> Type Name
+                                                                                </span>
+                                                                            </th>
+                                                                            <th scope="col" class="text-center">
+                                                                                <small class="">
+                                                                                จำนวนวันเวชภัณฑ์คงคลังเฉลี่ย <br> (โรงพยาบาล)
+                                                                                </small>
+                                                                            </th>
+                                                                            <th scope="col" class="text-center">
+                                                                                <small class="">
+                                                                                ปริมาณเวชภัณฑ์คงคลัง <br> (โรงพยาบาล)
+                                                                                </small>
+                                                                            </th>
+                                                                            <th scope="col" class="text-center">
+                                                                                <small class="">
+                                                                                ปริมาณการจัดส่งเวชภัณฑ์<br> (แนะนำ)
+                                                                                </small>
+                                                                            </th>
+                                                                            <th scope="col" class="text-center">
+                                                                                <small class="">
+                                                                                ปริมาณการจัดส่งเวชภัณฑ์<br> (ปรับแก้)
+                                                                                </small>
+                                                                            </th>
+                                                                            <th scope="col" class="text-center">
+                                                                                <small class="">
+                                                                                จำนวนวันเวชภัณฑ์คงคลัง<br> (โรงพยาบาล) หลังการจัดส่ง
+                                                                                </small>
+                                                                            </th>
+                                                                            <th scope="col" class="text-center">
+                                                                                <small class="">
+                                                                                ปริมาณเวชภัณฑ์คงคลัง <br> (โรงพยาบาล) หลังการจัดส่ง
+                                                                                </small>
+                                                                            </th>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="tb-tnx-id">
+                                                                                <a href="#" class="text-blue"><span>1</span></a>
+                                                                            </td>
+                                                                            <td class="">
+                                                                                <span class="">12 - Shoe cover</span>
+                                                                            </td>
+                                                                            <td class="text-center bg-azure-dim">
+                                                                                <span class="">1</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">53,131</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">30</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">60,000</span>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="tb-tnx-id">
+                                                                                <a href="#" class="text-blue"><span>2</span></a>
+                                                                            </td>
+                                                                            <td class="">
+                                                                                <span class="">05 - Shoe cover</span>
+                                                                            </td>
+                                                                            <td class="text-center bg-azure-dim">
+                                                                                <span class="">4</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">53,131</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">30</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">60,000</span>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="tb-tnx-id">
+                                                                                <a href="#" class="text-blue"><span>3</span></a>
+                                                                            </td>
+                                                                            <td class="">
+                                                                                <span class="">33 - Shoe cover</span>
+                                                                            </td>
+                                                                            <td class="text-center bg-azure-dim">
+                                                                                <span class="">4</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">53,131</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">30</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">60,000</span>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="tb-tnx-id">
+                                                                                <a href="#" class="text-blue"><span>4</span></a>
+                                                                            </td>
+                                                                            <td class="">
+                                                                                <span class="">13 - Shoe cover</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">4</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">53,131</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">30</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">60,000</span>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="tb-tnx-id">
+                                                                                <a href="#" class="text-blue"><span>5</span></a>
+                                                                            </td>
+                                                                            <td class="">
+                                                                                <span class="">01 - Shoe cover</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">60</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">53,131</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">30</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">60,000</span>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--- Progress Table --->
+                                                    <div class="col-2 pl-0">
+                                                        <div class="card-inner px-2">
+                                                            <div class="card card-bordered card-preview">
+                                                                <table class="table table-tranx is-compact">
+                                                                    <thead>
+                                                                        <tr class="tb-tnx-head">
+                                                                            <th class="text-center"><span class=""><br>กราฟแสดงปริมาณเวลา</span></th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="px-1" style="padding: 10px 5px;">
+                                                                                <div class="progress progress-lg">
+                                                                                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" data-progress="70">70%</div>
+                                                                                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" data-progress="30">30%</div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="px-1" style="padding: 10px 5px;">
+                                                                                <div class="progress progress-lg">
+                                                                                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" data-progress="70">70%</div>
+                                                                                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" data-progress="30">30%</div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="px-1" style="padding: 10px 5px;">
+                                                                                <div class="progress progress-lg">
+                                                                                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" data-progress="50">50%</div>
+                                                                                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" data-progress="50">50%</div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="px-1" style="padding: 10px 5px;">
+                                                                                <div class="progress progress-lg">
+                                                                                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" data-progress="40">40%</div>
+                                                                                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" data-progress="60">60%</div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="px-1" style="padding: 10px 5px;">
+                                                                                <div class="progress progress-lg">
+                                                                                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" data-progress="70">70%</div>
+                                                                                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" data-progress="30">30%</div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="nk-block-head nk-block-head-sm">
+                                    <div class="nk-block-between">
+                                        <div class="nk-block-head-content">
+                                            <h5>
+                                                ตารางแสดงข้อมูลตามเขตพื้นที่
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="nk-block">
+                                    <!--- Searching --->
+                                    <div class="row g-gs">
+                                        <div class="col-12">
+                                            <div class="card card-bordered card-preview container-fluid">
+                                                <div class="card-inner row">
+                                                    <div class="col-2">
+                                                        <h6>แสดงข้อมูลจาก</h6>
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <div class="row">
+                                                            <div class="col-3 pl-0">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="default-06"><small>เขต Health Area</small></label>
+                                                                    <div class="form-control-wrap ">
+                                                                        <div class="form-control-select">
+                                                                            <select class="form-control" id="default-06">
+                                                                    <option value="default_option">Default Option</option>
+                                                                    <option value="option_select_name">Option select name</option>
+                                                                    <option value="option_select_name">Option select name</option>
+                                                                </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 pl-0">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="default-06"><small>จังหวัด Province</small></label>
+                                                                    <div class="form-control-wrap ">
+                                                                        <div class="form-control-select">
+                                                                            <select class="form-control" id="default-06">
+                                                                    <option value="default_option">Default Option</option>
+                                                                    <option value="option_select_name">Option select name</option>
+                                                                    <option value="option_select_name">Option select name</option>
+                                                                </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 pl-0">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="default-06"><small>โรงพยาบาล Hospital</small></label>
+                                                                    <div class="form-control-wrap ">
+                                                                        <div class="form-control-select">
+                                                                            <select class="form-control" id="default-06">
+                                                                    <option value="default_option">Default Option</option>
+                                                                    <option value="option_select_name">Option select name</option>
+                                                                    <option value="option_select_name">Option select name</option>
+                                                                </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 pl-0">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="default-06"><small>กลุ่มเวชภัณฑ์ Product Type</small></label>
+                                                                    <div class="form-control-wrap ">
+                                                                        <div class="form-control-select">
+                                                                            <select class="form-control" id="default-06">
+                                                                    <option value="default_option">Default Option</option>
+                                                                    <option value="option_select_name">Option select name</option>
+                                                                    <option value="option_select_name">Option select name</option>
+                                                                </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-1 d-flex align-items-center justify-content-center">
+                                                        <a href="#" class="btn btn-icon btn btn-outline-primary"><em class="icon ni ni-search"></em></a>
+                                                    </div>
+                                                </div>
+
+
+                                                <!--- Bar - Progess bar --->
+                                                <div class="card-inner row py-0 d-flex align-items-center">
+                                                    <div class="col-1 bg-blue-dim">
+                                                        <span> 
+                                                            #PUI
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-11">
+                                                        <div class="progress progress-lg">
+                                                            <div class="progress-bar bg-warning-dim text-gray text-right" data-progress="45">157</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-inner row pt-1 pb-0 d-flex align-items-center">
+                                                    <div class="col-1 bg-blue-dim">
+                                                        <span> 
+                                                            #Mild
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-11">
+                                                        <div class="progress progress-lg">
+                                                            <div class="progress-bar bg-warning text-right" data-progress="30">150</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-inner row py-1 d-flex align-items-center">
+                                                    <div class="col-1 bg-blue-dim">
+                                                        <span> 
+                                                            #Moderate
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-11">
+                                                        <div class="progress progress-lg">
+                                                            <div class="progress-bar bg-orange text-right" data-progress="10">120</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-inner row pt-0 pb-4 d-flex align-items-center">
+                                                    <div class="col-1 bg-blue-dim">
+                                                        <span> 
+                                                            #Severe
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-11">
+                                                        <div class="progress progress-lg">
+                                                            <div class="progress-bar bg-danger text-right" data-progress="1">0</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--- Normal Table - Progress Table --->
+                                    <div class="row g-gs">
+                                        <div class="col-12">
+                                            <div class="card card-bordered card-preview container-fluid d-flex justify-content-center">
+                                                <div class="row">
+                                                    <!--- Normal Table --->
+                                                    <div class="col-10 pr-0">
+                                                        <div class="card-inner px-2">
+                                                            <div class="card card-bordered card-preview table-responsive">
+                                                                <table class="table is-compact">
+                                                                    <thead>
+                                                                        <tr class="tb-tnx-head">
+                                                                            <th class="">
+                                                                                <span class="">#</span>
+                                                                            </th>
+                                                                            <th scope="col" class="">
+                                                                                <span class="w-40">
+                                                                                ชื่อกลุ่มสินค้า <br> Type Name
+                                                                                </span>
+                                                                            </th>
+                                                                            <th scope="col" class="text-center">
+                                                                                <small class="">
+                                                                                จำนวนวันเวชภัณฑ์คงคลังเฉลี่ย <br> (โรงพยาบาล)
+                                                                                </small>
+                                                                            </th>
+                                                                            <th scope="col" class="text-center">
+                                                                                <small class="">
+                                                                                ปริมาณเวชภัณฑ์คงคลัง <br> (โรงพยาบาล)
+                                                                                </small>
+                                                                            </th>
+                                                                            <th scope="col" class="text-center">
+                                                                                <small class="">
+                                                                                ปริมาณการจัดส่งเวชภัณฑ์<br> (แนะนำ)
+                                                                                </small>
+                                                                            </th>
+                                                                            <th scope="col" class="text-center">
+                                                                                <small class="">
+                                                                                ปริมาณการจัดส่งเวชภัณฑ์<br> (ปรับแก้)
+                                                                                </small>
+                                                                            </th>
+                                                                            <th scope="col" class="text-center">
+                                                                                <small class="">
+                                                                                จำนวนวันเวชภัณฑ์คงคลัง<br> (โรงพยาบาล) หลังการจัดส่ง
+                                                                                </small>
+                                                                            </th>
+                                                                            <th scope="col" class="text-center">
+                                                                                <small class="">
+                                                                                ปริมาณเวชภัณฑ์คงคลัง <br> (โรงพยาบาล) หลังการจัดส่ง
+                                                                                </small>
+                                                                            </th>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="tb-tnx-id">
+                                                                                <a href="#" class="text-blue"><span>1</span></a>
+                                                                            </td>
+                                                                            <td class="">
+                                                                                <span class="">12 - Shoe cover</span>
+                                                                            </td>
+                                                                            <td class="text-center bg-azure-dim">
+                                                                                <span class="">1</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">53,131</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">30</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">60,000</span>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="tb-tnx-id">
+                                                                                <a href="#" class="text-blue"><span>2</span></a>
+                                                                            </td>
+                                                                            <td class="">
+                                                                                <span class="">05 - Shoe cover</span>
+                                                                            </td>
+                                                                            <td class="text-center bg-azure-dim">
+                                                                                <span class="">4</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">53,131</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">30</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">60,000</span>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="tb-tnx-id">
+                                                                                <a href="#" class="text-blue"><span>3</span></a>
+                                                                            </td>
+                                                                            <td class="">
+                                                                                <span class="">33 - Shoe cover</span>
+                                                                            </td>
+                                                                            <td class="text-center bg-azure-dim">
+                                                                                <span class="">4</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">53,131</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">30</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">60,000</span>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="tb-tnx-id">
+                                                                                <a href="#" class="text-blue"><span>4</span></a>
+                                                                            </td>
+                                                                            <td class="">
+                                                                                <span class="">13 - Shoe cover</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">4</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">53,131</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">30</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">60,000</span>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="tb-tnx-id">
+                                                                                <a href="#" class="text-blue"><span>5</span></a>
+                                                                            </td>
+                                                                            <td class="">
+                                                                                <span class="">01 - Shoe cover</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">60</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">53,131</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">30</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">60,000</span>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--- Progress Table --->
+                                                    <div class="col-2 pl-0">
+                                                        <div class="card-inner px-2">
+                                                            <div class="card card-bordered card-preview">
+                                                                <table class="table table-tranx is-compact">
+                                                                    <thead>
+                                                                        <tr class="tb-tnx-head">
+                                                                            <th class="text-center"><span class=""><br>กราฟแสดงปริมาณเวลา</span></th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="px-1" style="padding: 10px 5px;">
+                                                                                <div class="progress progress-lg">
+                                                                                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" data-progress="70">70%</div>
+                                                                                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" data-progress="30">30%</div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="px-1" style="padding: 10px 5px;">
+                                                                                <div class="progress progress-lg">
+                                                                                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" data-progress="70">70%</div>
+                                                                                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" data-progress="30">30%</div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="px-1" style="padding: 10px 5px;">
+                                                                                <div class="progress progress-lg">
+                                                                                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" data-progress="50">50%</div>
+                                                                                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" data-progress="50">50%</div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="px-1" style="padding: 10px 5px;">
+                                                                                <div class="progress progress-lg">
+                                                                                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" data-progress="40">40%</div>
+                                                                                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" data-progress="60">60%</div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="px-1" style="padding: 10px 5px;">
+                                                                                <div class="progress progress-lg">
+                                                                                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" data-progress="70">70%</div>
+                                                                                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" data-progress="30">30%</div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="nk-block-head nk-block-head-sm">
+                                    <div class="nk-block-between">
+                                        <div class="nk-block-head-content">
+                                            <h5>
+                                                ตารางแสดงข้อมูลตามจังหวัด
+                                            </h5>
+                                            <div class="nk-block-des text-danger">
+                                                <p>*สามารถแก้ไขปริมาณการจัดส่งเวชภัณฑ์ได้</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="nk-block">
+                                    <!--- Search  --->
+                                    <div class="row g-gs">
+                                        <div class="col-12">
+                                            <div class="card card-bordered card-preview container-fluid">
+                                                <div class="card-inner row">
+                                                    <div class="col-2">
+                                                        <h6>แสดงข้อมูลจาก</h6>
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <div class="row">
+                                                            <div class="col-3 pl-0">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="default-06"><small>เขต Health Area</small></label>
+                                                                    <div class="form-control-wrap ">
+                                                                        <div class="form-control-select">
+                                                                            <select class="form-control" id="default-06">
+                                                                    <option value="default_option">Default Option</option>
+                                                                    <option value="option_select_name">Option select name</option>
+                                                                    <option value="option_select_name">Option select name</option>
+                                                                </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 pl-0">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="default-06"><small>จังหวัด Province</small></label>
+                                                                    <div class="form-control-wrap ">
+                                                                        <div class="form-control-select">
+                                                                            <select class="form-control" id="default-06">
+                                                                    <option value="default_option">Default Option</option>
+                                                                    <option value="option_select_name">Option select name</option>
+                                                                    <option value="option_select_name">Option select name</option>
+                                                                </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 pl-0">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="default-06"><small>โรงพยาบาล Hospital</small></label>
+                                                                    <div class="form-control-wrap ">
+                                                                        <div class="form-control-select">
+                                                                            <select class="form-control" id="default-06">
+                                                                    <option value="default_option">Default Option</option>
+                                                                    <option value="option_select_name">Option select name</option>
+                                                                    <option value="option_select_name">Option select name</option>
+                                                                </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 pl-0">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="default-06"><small>กลุ่มเวชภัณฑ์ Product Type</small></label>
+                                                                    <div class="form-control-wrap ">
+                                                                        <div class="form-control-select">
+                                                                            <select class="form-control" id="default-06">
+                                                                    <option value="default_option">Default Option</option>
+                                                                    <option value="option_select_name">Option select name</option>
+                                                                    <option value="option_select_name">Option select name</option>
+                                                                </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-1 d-flex align-items-center justify-content-center">
+                                                        <a href="#" class="btn btn-icon btn btn-outline-primary"><em class="icon ni ni-search"></em></a>
+                                                    </div>
+                                                </div>
+
+
+                                                <!--- Bar - Progess bar --->
+                                                <div class="card-inner row py-0 d-flex align-items-center">
+                                                    <div class="col-1 bg-blue-dim">
+                                                        <span> 
+                                                            #PUI
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-11">
+                                                        <div class="progress progress-lg">
+                                                            <div class="progress-bar bg-warning-dim text-gray text-right" data-progress="45">157</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-inner row pt-1 pb-0 d-flex align-items-center">
+                                                    <div class="col-1 bg-blue-dim">
+                                                        <span> 
+                                                            #Mild
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-11">
+                                                        <div class="progress progress-lg">
+                                                            <div class="progress-bar bg-warning text-right" data-progress="30">150</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-inner row py-1 d-flex align-items-center">
+                                                    <div class="col-1 bg-blue-dim">
+                                                        <span> 
+                                                            #Moderate
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-11">
+                                                        <div class="progress progress-lg">
+                                                            <div class="progress-bar bg-orange text-right" data-progress="10">120</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-inner row pt-0 pb-4 d-flex align-items-center">
+                                                    <div class="col-1 bg-blue-dim">
+                                                        <span> 
+                                                            #Severe
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-11">
+                                                        <div class="progress progress-lg">
+                                                            <div class="progress-bar bg-danger text-right" data-progress="1">0</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <!--- Normal Table - Progress Table --->
+                                    <div class="row g-gs">
+                                        <div class="col-12">
+                                            <div class="card card-bordered card-preview container-fluid d-flex justify-content-center">
+                                                <div class="row">
+                                                    <!-- Normal Table -->
+                                                    <div class="col-10 pr-0">
+                                                        <div class="card-inner px-2">
+                                                            <div class="card card-bordered card-preview table-responsive">
+                                                                <table class="table is-compact">
+                                                                    <thead>
+                                                                        <tr class="tb-tnx-head">
+                                                                            <th class="">
+                                                                                <span class="">#</span>
+                                                                            </th>
+                                                                            <th scope="col" class="">
+                                                                                <span class="w-40">
+                                                                                ชื่อกลุ่มสินค้า <br> Type Name
+                                                                                </span>
+                                                                            </th>
+                                                                            <th scope="col" class="text-center">
+                                                                                <small class="">
+                                                                                จำนวนวันเวชภัณฑ์คงคลังเฉลี่ย <br> (โรงพยาบาล)
+                                                                                </small>
+                                                                            </th>
+                                                                            <th scope="col" class="text-center">
+                                                                                <small class="">
+                                                                                ปริมาณเวชภัณฑ์คงคลัง <br> (โรงพยาบาล)
+                                                                                </small>
+                                                                            </th>
+                                                                            <th scope="col" class="text-center">
+                                                                                <small class="">
+                                                                                ปริมาณการจัดส่งเวชภัณฑ์<br> (แนะนำ)
+                                                                                </small>
+                                                                            </th>
+                                                                            <th scope="col" class="bg-danger-dim text-center">
+                                                                                <small class="">
+                                                                                ปริมาณการจัดส่งเวชภัณฑ์<br> (ปรับแก้) <span class="text-danger">แก้ไขได้</span>
+                                                                                </small>
+                                                                            </th>
+                                                                            <th scope="col" class="text-center">
+                                                                                <small class="">
+                                                                                จำนวนวันเวชภัณฑ์คงคลัง<br> (โรงพยาบาล) หลังการจัดส่ง
+                                                                                </small>
+                                                                            </th>
+                                                                            <th scope="col" class="text-center">
+                                                                                <small class="">
+                                                                                ปริมาณเวชภัณฑ์คงคลัง <br> (โรงพยาบาล) หลังการจัดส่ง
+                                                                                </small>
+                                                                            </th>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="tb-tnx-id">
+                                                                                <a href="#" class="text-blue"><span>1</span></a>
+                                                                            </td>
+                                                                            <td class="">
+                                                                                <span class="">12 - Shoe cover</span>
+                                                                            </td>
+                                                                            <td class="text-center bg-azure-dim">
+                                                                                <span class="">1</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">53,131</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center bg-orange-dim">
+                                                                                <input type="text" class="form-control text-center" id="" placeholder="" value="6490">
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">30</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">60,000</span>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="tb-tnx-id">
+                                                                                <a href="#" class="text-blue"><span>2</span></a>
+                                                                            </td>
+                                                                            <td class="">
+                                                                                <span class="">05 - Shoe cover</span>
+                                                                            </td>
+                                                                            <td class="text-center bg-azure-dim">
+                                                                                <span class="">4</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">53,131</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center bg-orange-dim">
+                                                                                <input type="text" class="form-control text-center" id="" placeholder="" value="6490">
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">30</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">60,000</span>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="tb-tnx-id">
+                                                                                <a href="#" class="text-blue"><span>3</span></a>
+                                                                            </td>
+                                                                            <td class="">
+                                                                                <span class="">33 - Shoe cover</span>
+                                                                            </td>
+                                                                            <td class="text-center bg-azure-dim">
+                                                                                <span class="">4</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">53,131</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center bg-orange-dim">
+                                                                                <input type="text" class="form-control text-center" id="" placeholder="" value="6490">
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">30</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">60,000</span>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="tb-tnx-id">
+                                                                                <a href="#" class="text-blue"><span>4</span></a>
+                                                                            </td>
+                                                                            <td class="">
+                                                                                <span class="">13 - Shoe cover</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">4</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">53,131</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center bg-orange-dim">
+                                                                                <input type="text" class="form-control text-center" id="" placeholder="" value="6490">
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">30</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">60,000</span>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="tb-tnx-id">
+                                                                                <a href="#" class="text-blue"><span>5</span></a>
+                                                                            </td>
+                                                                            <td class="">
+                                                                                <span class="">01 - Shoe cover</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">60</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">53,131</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">6,490</span>
+                                                                            </td>
+                                                                            <td class="text-center bg-orange-dim">
+                                                                                <input type="text" class="form-control text-center" id="" placeholder="" value="6490">
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">30</span>
+                                                                            </td>
+                                                                            <td class="text-center">
+                                                                                <span class="">60,000</span>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!--- Progress Table --->
+                                                    <div class="col-2 pl-0">
+                                                        <div class="card-inner px-2">
+                                                            <div class="card card-bordered card-preview">
+                                                                <table class="table table-tranx is-compact">
+                                                                    <thead>
+                                                                        <tr class="tb-tnx-head">
+                                                                            <th class="text-center"><span class=""><br>กราฟแสดงปริมาณเวลา</span></th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="px-1" style="padding: 17px 5px;">
+                                                                                <div class="progress progress-lg">
+                                                                                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" data-progress="70">70%</div>
+                                                                                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" data-progress="30">30%</div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="px-1" style="padding: 17px 5px;">
+                                                                                <div class="progress progress-lg">
+                                                                                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" data-progress="70">70%</div>
+                                                                                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" data-progress="30">30%</div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="px-1" style="padding: 17px 5px;">
+                                                                                <div class="progress progress-lg">
+                                                                                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" data-progress="50">50%</div>
+                                                                                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" data-progress="50">50%</div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="px-1" style="padding: 17px 5px;">
+                                                                                <div class="progress progress-lg">
+                                                                                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" data-progress="40">40%</div>
+                                                                                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" data-progress="60">60%</div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="tb-tnx-item">
+                                                                            <td class="px-1" style="padding: 17px 5px;">
+                                                                                <div class="progress progress-lg">
+                                                                                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" data-progress="70">70%</div>
+                                                                                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" data-progress="30">30%</div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <!--- Save Btn --->
+                                                <div class="row mb-4">
+                                                    <div class="col-12 pr-0 text-center">
+                                                        <a href="#" class="btn btn-dim btn-outline-success"> บันทึกและคำนวณค่าใหม่ </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / content  -->
+                <!-- footer  -->
+                <div class="nk-footer">
+                    <div class="container-fluid">
+                        <div class="nk-footer-wrap">
+                            <div class="nk-footer-copyright"> &copy; 2020 DashLite. Template by <a href="#">Softnio</a>
+                            </div>
+                            <div class="nk-footer-links">
+                                <ul class="nav nav-sm">
+                                    <li class="nav-item"><a class="nav-link" href="#">Privacy</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / footer  -->
+            </div>
+            <!-- / wrap -->
+        </div>
+        <!-- / main  -->
+    </div>
+    <!-- / app-root -->
+    <!-- JavaScript -->
+    <script src="assets/js/bundle.js?ver=1.4.0"></script>
+    <script src="assets/js/scripts.js?ver=1.4.0"></script>
+    <script src="assets/js/charts/gd-general.js?ver=1.4.0"></script>
+</body>
+
+</html>
