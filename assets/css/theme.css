@@ -30,3 +30,11 @@ h6 {
     white-space: nowrap;
     width: calc(100%);
 }
+
+.form-control-sm {
+    padding: 0.25rem 0.5rem 0.25rem 0.25rem !important;
+}
+
+.datatable-wrap #report_filter {
+    display: none;
+}

@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="zxx" class="js">
+
+<head>
+    <base href="">
+    <meta charset="utf-8">
+    <meta name="author" content="Softnio">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="@@page-discription">
+    <!-- Fav Icon  -->
+    <link rel="shortcut icon" href="images/new-logo-icon.png">
+    <!-- Page Title  -->
+    <title>Matching System | Overview</title>
+    <!-- StyleSheets  -->
+    <link rel="stylesheet" href="assets/css/dashlite.css?ver=1.4.0">
+    <link id="skin-default" rel="stylesheet" href="assets/css/theme.css?ver=1.4.0">
+</head>
+
+<body class="nk-body bg-lighter npc-general has-sidebar ">
+    <div class="nk-app-root">
+        <!-- main -->
+        <div class="nk-main ">
+            <!-- sidebar -->
+            <div class="nk-sidebar nk-sidebar-fixed is-light" data-content="sidebarMenu">
+                <div class="nk-sidebar-element nk-sidebar-head">
+                    <div class="nk-sidebar-brand">
+                        <a href="html/general/index.html" class="logo-link nk-sidebar-logo">
+                            <img class="logo-light logo-img" src="images/new-logo.png" srcset="images/new-logo.png 2x" alt="logo">
+                            <img class="logo-dark logo-img" src="images/new-logo.png" srcset="images/new-logo.png 2x" alt="logo-dark">
+                            <!--<span class="nio-version">Dashboard</span>-->
+                        </a>
+                    </div>
+                    <div class="nk-menu-trigger mr-n2">
+                        <a href="#" class="nk-nav-toggle nk-quick-nav-icon d-xl-none" data-target="sidebarMenu"><em class="icon ni ni-arrow-left"></em></a>
+                    </div>
+                </div>
+                <!-- sidebar-element -->
+                <div class="nk-sidebar-element">
+                    <div class="nk-sidebar-content">
+                        <div class="nk-sidebar-menu" data-simplebar>
+                            <ul class="nk-menu">
+
+                                <!-- menu-heading -->
+                                <li class="nk-menu-heading">
+                                    <h6 class="overline-title text-primary-alt"> Independent variable </h6>
+                                </li>
+                                <!-- จำนวนกะทำงาน -->
+                                <li class="form-group row mb-2" style="padding: 0.25rem 24px 0.5rem;">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-label" for="worktime">จำนวนกะทำงาน</label>
+                                            <!--<span class="form-note"></span>-->
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 pl-0">
+                                        <div class="form-group">
+                                            <div class="form-control-wrap">
+                                                <input type="text" class="form-control" id="worktime" value="" style="text-align:right;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- ค่าเผื่อใช้เวชภัณฑ์ - 20.00% -->
+                                <li class="form-group row mb-2" style="padding: 0.25rem 24px 0.5rem;">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-label" for="medical-tools">ค่าเผื่อใช้เวชภัณฑ์</label>
+                                            <!--<span class="form-note"></span>-->
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 pl-0">
+                                        <div class="form-group">
+                                            <div class="form-control-wrap">
+                                                <input type="text" class="form-control" id="medical-tools" value="" style="text-align:right;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- จำนวนวันชุด ppe คงคลัง (มากสุด) -->
+                                <li class="form-group row mb-2" style="padding: 0.25rem 24px 0.5rem;">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-label" for="ppe-no">จำนวนวันชุด ppe คงคลัง </label>
+                                            <span class="form-note">(มากสุด)</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 pl-0">
+                                        <div class="form-group">
+                                            <div class="form-control-wrap">
+                                                <input type="text" class="form-control" id="ppe-no" value="" style="text-align:right;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- เวลาการจัดส่ง surgical masks (มากสุด) -->
+                                <li class="form-group row mb-2" style="padding: 0.25rem 24px 0.5rem;">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-label" for="mask-time-high">เวลาการจัดส่ง surgical masks </label>
+                                            <span class="form-note">(มากสุด)</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 pl-0">
+                                        <div class="form-group">
+                                            <div class="form-control-wrap">
+                                                <input type="text" class="form-control" id="mask-time-high" value="" style="text-align:right;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- เวลาการจัดส่ง surgical masks (น้อยสุด) -->
+                                <li class="form-group row mb-0" style="padding: 0.25rem 24px 0.5rem;">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-label" for="mask-time-low">เวลาการจัดส่ง surgical masks </label>
+                                            <span class="form-note">(น้อยสุด)</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 pl-0">
+                                        <div class="form-group">
+                                            <div class="form-control-wrap">
+                                                <input type="text" class="form-control" id="mask-time-low" value="" style="text-align:right;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- แก้ไขข้อมูล -->
+                                <li class="nk-menu-item d-flex justify-content-end">
+                                    <a href="#" class="nk-menu-link text-blue" style="padding: 0.625rem 24px 0.625rem 24px;">
+                                        <span>แก้ไขข้อมูล<em class="icon ni ni-edit"></em></span>
+                                    </a>
+                                </li>
+
+                                <!-- menu-head -->
+                                <li class="nk-menu-heading">
+                                    <h6 class="overline-title text-primary-alt"> All Patients </h6>
+                                </li>
+                                <div class="row" style="padding: 0.25rem 24px 0.5rem;">
+                                    <li class="col-12">
+                                        <div class="card card-bordered">
+                                            <div class="card-inner text-center">
+                                                <h6 class="card-subtitle mb-2">#PUI</h6>
+                                                <h5 class="card-title">3,255</h5>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </div>
+
+                                <div class="row" style="padding: 0.25rem 24px 0.5rem;">
+                                    <li class="col-4 pr-1">
+                                        <div class="card card-bordered">
+                                            <div class="m-2 my-3 text-center">
+                                                <p class="card-subtitle mb-2">#Mild</p>
+                                                <h5 class="card-title">652</h5>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="col-4 px-0">
+                                        <div class="card card-bordered">
+                                            <div class="m-1 my-3 text-center">
+                                                <p class="card-subtitle mb-2">#Moderate</p>
+                                                <h5 class="card-title">257</h5>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="col-4 pl-1">
+                                        <div class="card card-bordered">
+                                            <div class="m-1 my-3 text-center">
+                                                <p class="card-subtitle mb-2">#Severe</p>
+                                                <h5 class="card-title">-</h5>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </div>
+                            </ul>
+                            <!-- .nk-menu -->
+                        </div>
+                        <!-- .nk-sidebar-menu -->
+                    </div>
+                    <!-- .nk-sidebar-content -->
+                </div>
+                <!-- .nk-sidebar-element -->
+            </div>
+            <!--/ sidebar -->
+
+
+            <!-- wrap -->
+            <div class="nk-wrap ">
+                <!-- main header -->
+                <div class="nk-header nk-header-fixed is-light d-flex align-items-center" style="height:65px">
+                    <div class="container-fluid">
+                        <div class="nk-header-wrap">
+                            <div class="nk-menu-trigger d-xl-none ml-n1">
+                                <a href="#" class="nk-nav-toggle nk-quick-nav-icon" data-target="sidebarMenu"><em class="icon ni ni-menu"></em></a>
+                            </div>
+                            <div class="nk-header-brand d-xl-none">
+                                <a href="#" class="logo-link">
+                                    <img class="logo-light logo-img" src="images/new-logo.png" srcset="images/new-logo.png 2x" alt="logo">
+                                    <img class="logo-dark logo-img" src="images/new-logo.png" srcset="images/new-logo.png 2x" alt="logo-dark">
+                                    <!--<span class="nio-version">Dashboard</span>-->
+                                </a>
+                            </div>
+                            <!-- header-brand -->
+                            <div class="nk-header-news d-none d-xl-block text-indigo">
+                                <div class="nk-news-list">
+                                    <a class="nk-news-item" href="#">
+                                        <div class="nk-news-icon">
+                                            <em class="icon ni ni-card-view text-blue"></em>
+                                        </div>
+                                        <div class="nk-news-text">
+                                            <p>REPORT : ORDER ALLOCATION </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- header-news -->
+                            <div class="nk-header-tools">
+                                <ul class="nk-quick-nav">
+
+                                </ul>
+                            </div>
+
+                            <!-- .nk-header-tools -->
+                        </div>
+                        <!-- .nk-header-wrap -->
+                    </div>
+                    <!-- .container-fliud -->
+                </div>
+                <!-- / main header -->
+
+
+                <!-- content -->
+                <div class="nk-content ">
+                    <div class="container-fluid">
+                        <div class="nk-content-inner">
+                            <div class="nk-content-body">
+                                <!-- Header -->
+                                <div class="nk-block-head-content">
+                                    <div class="nk-block-head-sub">
+                                        <a class="back-to" href="dashboard.html">
+                                            <em class="icon ni ni-arrow-left"></em><span> Dashboard </span>
+                                        </a>
+                                    </div>
+                                    <h2 class="nk-block-title fw-normal">Report</h2>
+                                    <div class="nk-block-des">
+                                        <p class="lead mb-0 pb-1">REPORT : ORDER ALLOCATION</p>
+                                        <p> DATE : 09-04-2020</p>
+                                    </div>
+                                </div>
+
+                                <!-- Header V.2 -->
+                                <!---
+                                <div class="nk-block-head nk-block-head-sm">
+                                    <div class="nk-block-between">
+                                        <div class="nk-block-head-content">
+                                            <h5 class="nk-block-title">
+                                                REPORT : ORDER ALLOCATION
+                                            </h5>
+                                            <div class="nk-block-des">
+                                            <span>
+                                                DATE : 09-04-2020
+                                            </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                --->
+
+                                <div class="nk-block mt-3">
+                                    <!--- Searching --->
+                                    <div class="row g-gs">
+                                        <div class="col-12">
+                                            <div class="card card-bordered card-preview container-fluid">
+                                                <div class="card-inner row">
+                                                    <div class="col-1">
+                                                        <h6>ค้นหาข้อมูล</h6>
+                                                    </div>
+                                                    <div class="col-10">
+                                                        <div class="row">
+                                                            <div class="col-4 pl-0">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="default-06"> เขต Health Area </label>
+                                                                    <div class="form-control-wrap ">
+                                                                        <div class="form-control-select">
+                                                                            <select class="form-control" id="default-06">
+                                                                                <option value="default_option">All</option>
+                                                                                <option value="option_select_name">Option select name</option>
+                                                                                <option value="option_select_name">Option select name</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-4 pl-0">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="default-06"> จังหวัด Province </label>
+                                                                    <div class="form-control-wrap ">
+                                                                        <div class="form-control-select">
+                                                                            <select class="form-control" id="default-06">
+                                                                                <option value="default_option">All</option>
+                                                                                <option value="option_select_name">Option select name</option>
+                                                                                <option value="option_select_name">Option select name</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-4 pl-0">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="default-06"> โรงพยาบาล Hospital </label>
+                                                                    <div class="form-control-wrap ">
+                                                                        <div class="form-control-select">
+                                                                            <select class="form-control" id="default-06">
+                                                                                <option value="default_option">All</option>
+                                                                                <option value="option_select_name">Option select name</option>
+                                                                                <option value="option_select_name">Option select name</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!--
+                                                            <div class="col-3 pl-0">
+                                                                <div class="form-group">
+                                                                    <label class="form-label" for="default-06"> กลุ่มเวชภัณฑ์ Product Type </label>
+                                                                    <div class="form-control-wrap ">
+                                                                        <div class="form-control-select">
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-1 d-flex align-items-center justify-content-center">
+                                                        <a href="#" class="btn btn-icon btn btn-outline-primary"><em class="icon ni ni-search"></em></a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--- Normal Table - Progress Table --->
+                                    <div class="row g-gs">
+                                        <div class="nk-block nk-block-lg col-12">
+                                            <div class="card card-bordered card-preview">
+                                                <div class="card-inner">
+                                                    <table id="report" class="datatable-init table" data-auto-responsive="false">
+                                                        <!--- datatable-init --->
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Row Labels</th>
+                                                                <th>Row Labels</th>
+                                                                <th class="sum"> 09 - Surgical mask </th>
+                                                                <th class="sum"> 15 - Protective coverall </th>
+                                                                <th class="sum"> 07 - N95 Respirator medical grade </th>
+                                                                <th class="sum"> 03 - Isolation gown </th>
+                                                                <th class="sum"> 04 - Hood cover </th>
+                                                                <th> 05 - Disposable cap </th>
+                                                                <th> 06 - Face shield </th>
+                                                                <th> 16 - Sterile glove </th>
+                                                                <th> 12 - Shoe cover </th>
+                                                                <th> 23 - Alcohol base gel </th>
+                                                                <th> 26 - Biohazard bag </th>
+                                                                <th> 01 - Disposable apron </th>
+                                                                <th> 18 - No powder glove </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>เชียงใหม่</td>
+                                                                <td>11122 - โรงพยาบาลดอยสะเก็ด</td>
+                                                                <td>1000</td>
+                                                                <td>1000</td>
+                                                                <td>1000</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>เชียงใหม่</td>
+                                                                <td>11128 - โรงพยาบาลสันป่าตอง</td>
+                                                                <td>1000</td>
+                                                                <td>1000</td>
+                                                                <td>1000</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>เชียงใหม่</td>
+                                                                <td>11643 - โรงพยาบาลดอยหล่อ</td>
+                                                                <td>1000</td>
+                                                                <td>1000</td>
+                                                                <td>1000</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>เชียงราย</td>
+                                                                <td>11193 - โรงพยาบาลเชียงแสน</td>
+                                                                <td>1000</td>
+                                                                <td>1000</td>
+                                                                <td>1000</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>เชียงราย</td>
+                                                                <td>11198 - โรงพยาบาลเวียงแก่น</td>
+                                                                <td>1000</td>
+                                                                <td>1000</td>
+                                                                <td>1000</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>เชียงราย</td>
+                                                                <td>11193 - โรงพยาบาลเชียงแสน</td>
+                                                                <td>1000</td>
+                                                                <td>1000</td>
+                                                                <td>1000</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>น่าน</td>
+                                                                <td>11176 - โรงพยาบาลท่าวังผา</td>
+                                                                <td>1000</td>
+                                                                <td>1000</td>
+                                                                <td>1000</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>น่าน</td>
+                                                                <td>11178 - โรงพยาบาลทุ่งช้าง</td>
+                                                                <td>1000</td>
+                                                                <td>1000</td>
+                                                                <td>1000</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>น่าน</td>
+                                                                <td>11183 - โรงพยาบาลสองแคว</td>
+                                                                <td>1000</td>
+                                                                <td>1000</td>
+                                                                <td>1000</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>น่าน</td>
+                                                                <td>25017 - โรงพยาบาลภูเพียง</td>
+                                                                <td>1000</td>
+                                                                <td>1000</td>
+                                                                <td>1000</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                        <tfoot>
+                                                            <tr>
+                                                                <th>Row Labels</th>
+                                                                <th>Row Labels</th>
+                                                                <th> 09 - Surgical mask </th>
+                                                                <th> 15 - Protective coverall </th>
+                                                                <th> 07 - N95 Respirator medical grade </th>
+                                                                <th> 03 - Isolation gown </th>
+                                                                <th> 04 - Hood cover </th>
+                                                                <th> 05 - Disposable cap </th>
+                                                                <th> 06 - Face shield </th>
+                                                                <th> 16 - Sterile glove </th>
+                                                                <th> 12 - Shoe cover </th>
+                                                                <th> 23 - Alcohol base gel </th>
+                                                                <th> 26 - Biohazard bag </th>
+                                                                <th> 01 - Disposable apron </th>
+                                                                <th> 18 - No powder glove </th>
+                                                            </tr>
+                                                        </tfoot>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / content  -->
+                <!-- footer  -->
+                <div class="nk-footer">
+                    <div class="container-fluid">
+                        <div class="nk-footer-wrap">
+                            <div class="nk-footer-copyright"> &copy; 2020 DashLite. Template by <a href="#">Softnio</a>
+                            </div>
+                            <div class="nk-footer-links">
+                                <ul class="nav nav-sm">
+                                    <li class="nav-item"><a class="nav-link" href="#">Privacy</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / footer  -->
+            </div>
+            <!-- / wrap -->
+        </div>
+        <!-- / main  -->
+    </div>
+    <!-- / app-root -->
+    <!-- JavaScript -->
+    <script src="assets/js/bundle.js?ver=1.4.0"></script>
+    <script src="assets/js/scripts.js?ver=1.4.0"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#report').DataTable({
+                "ordering": false,
+                "info": false,
+                "paging": false,
+                "scrollX": '1000px',
+                initComplete: function() {
+                    this.api().columns().every(function() {
+                        var column = this;
+                        var select = $('<select class="form-control-sm text-right"><option value="">All</option></select>')
+                            .appendTo($(column.footer()).empty())
+                            .on('change', function() {
+                                var val = $.fn.dataTable.util.escapeRegex(
+                                    $(this).val()
+                                );
+
+                                column
+                                    .search(val ? '^' + val + '$' : '', true, false)
+                                    .draw();
+                            });
+
+                        column.data().unique().sort().each(function(d, j) {
+                            select.append('<option value="' + d + '">' + d + '</option>')
+                        });
+                    });
+                },
+                /*
+                "footerCallback": function(row, data, start, end, display) {
+                    var api = this.api();
+
+                    api.columns('.sum', {
+                        page: 'current'
+                    }).every(function() {
+                        var sum = this
+                            .data()
+                            .reduce(function(a, b) {
+                                var x = parseFloat(a) || 0;
+                                var y = parseFloat(b) || 0;
+                                return x + y;
+                            }, 0);
+                        console.log(sum); //alert(sum);
+                        $('.sub-header').html(sum);
+                    });
+                }
+                */
+            });
+
+
+            /*
+                        var table = $('#report').DataTable({
+                            "scrollY": "200px",
+                            "ordering": false,
+                            "info": false,
+                            "searching": false,
+                            "paging": false,
+                            "scrollX": '1000px',
+                        });
+
+                        
+                        $('a.toggle-vis').on('click', function(e) {
+                            e.preventDefault();
+
+                            // Get the column API object
+                            var column = table.column($(this).attr('data-column'));
+
+                            // Toggle the visibility
+                            column.visible(!column.visible());
+                        });
+                        */
+
+
+        });
+    </script>
+</body>
+
+</html>
